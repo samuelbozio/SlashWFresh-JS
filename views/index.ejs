@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLASHWFRESH</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="post-form">
+      <h1></h1>
+      <form action="/postagens" method="post">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <label for="conteudo">Conteúdo:</label>
+        <textarea id="conteudo" name="conteudo" required cols="40" rows="35" placeholder="....."></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+    </div>
+
+    <div class="postagens-recentes">
+      <h2>Últimas</h2>
+      <ul>
+        <% postagens.forEach((postagem, index) => { %>
+          <li>
+            <a href="/postagem/<%= index %>"><strong><%= postagem.titulo.toUpperCase() %></strong></a>
+          </li>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

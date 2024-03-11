@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    flex-direction: row;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .main-container {
+    display: flex;
+  }
+  
+  .post-form,
+  .postagens-recentes {
+    width: 50%; /* Cada seção ocupa metade da largura da tela */
+    padding: 10px;
+    padding-left: 80px;
+    font-family: "Playfair Display", serif;
+  }
+  
+  input {
+    width: 100%;
+    background-color: rgb(206, 207, 207);
+    border: none;
+    height: 30px;
+    display: flex;
+    text-align: start;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: BOLDER;
+    font-size: 18px;
+  }
+  
+  textarea {
+    width: 100%;
+    background-color: rgb(206, 207, 207);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-weight: 600;
+  }
+  
+  button {
+    height: 30px;
+    border: none;
+    width: 60px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+  }
+
+  button:hover {
+    background-color: rgb(206, 207, 207);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  a:hover {
+    color: rgb(206, 207, 207);
+  }
